@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Translate in 3D</title>
+        <style type="text/css">
+            *{
+                perspective:500px;
+            }
+            body{
+                height:100vh;
+
+                display:grid;
+                place-items:center;
+            }
+            img{
+                width:300px;
+                transition:transform 1s;
+            }
+            img:hover{
+                /* transform:rotateX(85deg); */
+                /* transform:rotateX(-180deg); */
+
+                /* transform:rotateY(180deg); */
+                /* transform:rotateY(360deg); */
+                /* transform:rotateY(-180deg); */
+                /* transform:rotateY(1turn); */
+                transform:rotateY(400grad);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <img src="./img/dog.jpg" alt="dog" />
+        </div>
+
+
+    </body>
+</html>

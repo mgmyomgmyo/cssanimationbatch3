@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Perspective</title>
+        <style type="text/css">
+            *{
+                perspective:500px;
+            }
+          body{
+              height:100vh;
+
+              display:flex;
+              justify-content:center;
+              align-items:center;
+          }
+          .container{
+              width:500px;
+              background:#f4f4f4;
+          }
+          .div1{
+              width:250px;
+              height:100px;
+              background:linear-gradient(black,silver);
+              border:1px solid black;
+              box-shadow:-5px 0 10px rgba(0,0,0,0.2);
+
+              /* perspective:500px; */
+              padding:10px;
+              margin:auto;
+              position:relative;
+          }
+          .div2{
+              width:200px;
+              height:100px;
+              background:linear-gradient(black,silver);
+              border:1px solid black;
+              box-shadow:-5px 0 10px rgba(0,0,0,0.2);
+
+              transform: rotateX(45deg);
+
+              padding:50px;
+
+              position:absolute;
+              top:-100%;
+              left:-15px;
+              z-index:1;
+          }
+
+          .div3{
+              width:50px;
+              height:100px;
+             background:conic-gradient(silver 50%,grey 0);
+              /* border:1px solid black; */
+              border-left:1px dashed black;
+              border-right:1px dashed black;
+
+              position:absolute;
+              bottom:0;
+              left:60%;
+          }
+        </style>
+    </head>
+    <body>
+
+      <div class="container">
+
+        <div class="div1">DIV1
+            <div class="div2">DIV2</div>
+            <div class="div3">DIV3</div>
+        </div>
+
+      </div>
+        
+        
+    </body>
+</html>

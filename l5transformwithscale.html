@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Transform with scale</title>
+        <style type="text/css">
+         .container{
+             width:1000px;
+             background:gray;
+         }
+         .container .move{
+             width:150px;
+             height:60px;
+             background:red;
+             color:#fff;
+             font-size:20px;
+
+             margin:20px 0;
+
+             text-align:center;
+             line-height:60px;
+             transition:all 0.5s;
+         }
+         #scale:hover{
+             transform:scale(0.5);
+         }
+
+         #scalexy:hover{
+                       /* scale(x,y) */
+             /* transform:scale(1,2); */
+             transform:scale(2,3);
+         }
+
+         #scalex:hover{
+             transform:scaleX(2);
+         }
+         #scaley:hover{
+             transform:scaleY(0.5);
+         }
+
+         img{
+             width:300px;
+             display:block;
+             margin:auto;
+             transition:all 0.3s;
+         }
+         img:hover{
+             transform:scale(0.5);
+             /* transform:scale(2,3); */
+             /* transform:scaleX(2); */
+             /* transform:scaleY(2); */
+         }
+
+
+        </style>
+    </head>
+    <body>
+
+  <div class="container">
+    <div id="scale" class="move">Scale Me</div>
+
+    <div id="scalexy" class="move">Scale X,Y</div>
+
+    <div id="scalex" class="move">Scale X</div>
+
+    <div id="scaley" class="move">Scale Y</div>
+  </div>
+  <hr/>
+
+  <div>
+      <img src="./img/cat.jpg" alt="cat" />
+  </div>
+        
+
+
+
+
+    </body>
+</html>
+
+<!-- scale  
+scale(x,y)  
+scale(x)  
+scale(y) -->

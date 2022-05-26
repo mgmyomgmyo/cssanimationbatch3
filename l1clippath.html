@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clip Path</title>
+        <style type="text/css">
+
+            /* property + value = decoration */
+          .triangle{
+              width:0;
+              height:0;
+              
+              border-left:100px solid transparent;
+              border-right:100px solid transparent;
+              border-bottom:100px solid steelblue;
+          }
+
+          .squareshape{
+              width:100px;
+              height:100px;
+              background:steelblue;
+
+              float:left;
+              margin-right:20px;
+          }
+          p{
+              font-size:20px;
+          }
+
+          .circleshape{
+              width:100px;
+              height:100px;
+              background:steelblue;
+
+              /* clip-path:circle(); */
+              clip-path:circle(50%);
+              shape-outside:circle();
+              margin-right:20px;
+
+              float:left;
+          }
+
+          .ellipseshape{
+              width:100px;
+              height:100px;
+              background:steelblue;
+              
+              /*ellipse width and height*/
+              clip-path:ellipse(50% 70%);
+              shape-outside:ellipse(50% 70%);
+              margin-right:20px;
+
+              float:left;
+          }
+          .polygonshape{
+              width:100px;
+              height:100px;
+              background:steelblue;
+
+              clip-path: polygon(0 0, 19% 0, 47% 55%, 81% 0, 100% 0, 57% 70%, 57% 70%, 49% 71%, 40% 71%);
+              shape-outside:polygon(0 0, 19% 0, 47% 55%, 81% 0, 100% 0, 57% 70%, 57% 70%, 49% 71%, 40% 71%);
+
+              float:left;
+              margin-right:20px;
+          }
+
+
+
+
+
+
+          /* circle
+          ellipse
+          polygon */
+        </style>
+    </head>
+    <body>
+
+        <div class="triangle">Triangle</div>
+ <hr/>
+        <div>
+           <div class="squareshape"></div>
+               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.lo</p>
+           
+        </div>
+        <hr/>
+
+        <div>
+            <div class="circleshape"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.lo</p>
+            
+         </div>
+
+         <hr/>
+
+         <div>
+            <div class="ellipseshape"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.lo</p>
+            
+         </div>
+
+         <hr/>
+
+         <div>
+            <div class="polygonshape"></div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.loLorem ipsum dolor sit amet consectetur, adipisicing elit. Ut a quia voluptates minima, distinctio corrupti dolorum numquam magnam sit odit explicabo fuga vitae at, expedita hic perferendis. Minus, excepturi consequatur.lo</p>
+            
+         </div>
+
+
+
+         
+         
+ 
+         
+ 
+        
+
+
+
+    </body>
+</html>
