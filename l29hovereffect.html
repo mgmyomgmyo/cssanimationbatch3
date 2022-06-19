@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hover Effect</title>
+        <style type="text/css">
+            body{
+                font-family:sans-serif;
+                height:100vh;
+                background-color:#11a897;
+
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            .btn{
+              width:350px;
+              height:65px;
+              background-color:#000;
+              border:none;
+              color:#fff;
+              /* text-align:start; */
+              box-shadow:5px 5px 1px rgba(0,0,0,0.3);
+              position:relative;
+            }
+            .btn span{
+                font-size:20px;
+                text-transform:uppercase;
+                letter-spacing:5px;
+                display:block;
+
+                transform:scaleX(0.6);
+                transform-origin:left;
+            }
+            .btn em{
+                width:30%;
+                height:1px;
+                background:#fff;
+                
+
+                position:absolute;
+                top: 50%;
+                right:0;
+
+            }
+
+  
+        </style>
+    </head>
+    <body>
+        
+        <!--emplasis element-->
+       <button type="button" class="btn"><span>Read More...</span><em></em></button>
+
+
+    </body>
+</html>
